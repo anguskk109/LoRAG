@@ -2,4 +2,5 @@ __pycache__/
 cache/
 data/
 outputs/
+rag_db/
 notes.txt
