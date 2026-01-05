@@ -53,24 +53,20 @@ This staged approach ensures **controlled, interpretable training** and avoids i
 The repository is organized into modular directories for data, training, evaluation, and RAG components:
 
 LoRAG/
-├── LoRa_WeightLoss/ # Early training attempts
-│
-├── outputs/ # NOT Uploaded Here
-│ ├── S1-relevance-lora/ # Stage-1 adapter: relevance classification only
-│ └── S2-reasoning-lora/ # Stage-2 adapter: reasoning generation + frozen relevance
-│
-├── rag/ # RAG pipeline components (retrieval & evaluation)
-│ ├── build_faiss_db.py # Script to build FAISS vector database from AG News
-│ ├── eval_result.txt # Output of RAG evaluation metrics
-│ └── rag_eval.py # Main script to run RAG retrieval + LoRA evaluation
-│
-├── requirements.txt
-├── generate_samples.py # Shared by both stages
-├── eval_lora_s1.py # Stage-1 specific evaluation script
-├── eval_lora_s2.py # Stage-2 specific evaluation script
-├── train_lora_s1.py # Stage-1 training script (masks non-"relevant" tokens)
-├── train_lora_s2.py # Stage-2 training script (masks pre-"reason" tokens)
-└── README.md # This document
+- LoRa_WeightLoss/ # Early training attempts
+- outputs/ # NOT Uploaded Here
+    - S1-relevance-lora/ # Stage-1 adapter: relevance classification only
+    - S2-reasoning-lora/ # Stage-2 adapter: reasoning generation + frozen relevance
+- rag/ # RAG pipeline components (retrieval & evaluation)
+    - build_faiss_db.py # Script to build FAISS vector database from AG News
+    - eval_result.txt # Output of RAG evaluation metrics
+    - rag_eval.py # Main script to run RAG retrieval + LoRA evaluation
+- requirements.txt
+- generate_samples.py # Shared by both stages
+- eval_lora_s1.py # Stage-1 specific evaluation script
+- eval_lora_s2.py # Stage-2 specific evaluation script
+- train_lora_s1.py # Stage-1 training script (masks non-"relevant" tokens)
+- rain_lora_s2.py # Stage-2 training script (masks pre-"reason" tokens)
 
 ---
 
