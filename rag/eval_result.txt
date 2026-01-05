@@ -1,0 +1,36 @@
+Loading FAISS index...
+Loading Stage-2 evaluator...
+Loaded 10 queries
+Query: International news articles
+P@5 = 1.00
+
+Query: Give me business news
+P@5 = 0.80
+
+Query: Show me headlines about sports.
+P@5 = 1.00
+
+Query: Business and financial news
+P@5 = 0.80
+
+Query: Give me world news
+P@5 = 0.80
+
+Query: I'm looking for the latest sports updates.
+P@5 = 1.00
+
+Query: Technology or science-related articles
+P@5 = 1.00
+
+Query: I want updates on the market and companies.
+P@5 = 1.00
+
+Query: I want news about global events.
+P@5 = 1.00
+
+Query: Latest updates in sports
+P@5 = 1.00
+
+==== RAG Evaluation ====
+Queries evaluated: 10
+Mean P@5: 0.940
